@@ -1,0 +1,89 @@
+// Online Dart Editor for free
+// Write, Edit and Run your Dart code using Dart Online Compiler
+
+void main(List<String> arguments) {
+    //variables numericas
+    
+    /*int age = 22;
+    int test = -51;
+    int large = 000100001;*/
+    
+    /*double age2 = 25.1;
+    double age3 = 25;
+    age2 = 1;
+    print(age2);
+    print(age3);*/
+    
+    /*num age4 = 12;
+    num age5 = 12.1;
+    age5 = 1;
+    print(age4);
+    print(age5);*/
+    
+    /*num miValor = 10;
+    miValor = 10.5;
+    
+    int miValor = 5.5;
+    
+    print(miValor);*/
+    
+    /*String name = "Juan Reina";
+    name = "Juan";
+    String age = "22 años";
+    //String fullText = name + " " + age;
+    String fullText = "Mi nombre es $name y tengo $age";
+    print(fullText);*/
+    
+    /*
+    //TIPOS FIJOS
+    final String ex2 = "Juan";
+    const String ex3 = "Mi clave: 1234";
+    
+    //CONVERSIONES
+    String toNumber = "31";
+    int numberOk = int.parse(toNumber);
+    
+    print("El numero es $numberOk");
+    
+    
+    int numbertoString = 777;
+    String Number = numbertoString.tostring(numbertoString);
+    print(Number);
+    */
+    
+    /*
+    String a = "1";
+    String b = "4";
+    
+    int na = int.parse(a);
+    int nb = int.parse(b);
+    
+    int resultado = na + nb;
+    print("El resultado es $resultado");*/
+    
+    /*String a = "2.3";
+    String b = "4.5";
+    
+    double na = double.parse(a);
+    double nb = double.parse(b);
+    
+    double resultado = na + nb;
+    print("El resultado es $resultado");*/
+    
+    
+    
+    
+    //Pedirle al usuario ingresar un dato
+    print("Ingrese la edad");
+    //Dato ingresado por el usuario
+    String fdn = "2004";
+    //Se añade el año actual para restalo y que de la edad
+    int fechaActual = 2026;
+    //CONVERSION DE DATOS (STRING TO INT)
+    int ano = int.parse(fdn);
+    print(ano);
+    //ECUACION PARA HALLAR EL DATO FINAL
+    int fecha = fechaActual - ano ;
+    //IMPRESION FINAL
+     print("Tienes $fecha años");
+}
