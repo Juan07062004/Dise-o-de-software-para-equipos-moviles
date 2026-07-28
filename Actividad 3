@@ -1,0 +1,10 @@
+// Online Dart Editor for free
+// Write, Edit and Run your Dart code using Dart Online Compiler
+
+void main(List<String> arguments) {
+    //variables numericas
+    
+    int age = 22;
+    int test = -51;
+    int large = 000100001;
+}
