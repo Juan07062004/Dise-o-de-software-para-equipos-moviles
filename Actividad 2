@@ -1,0 +1,12 @@
+// Online Dart Editor for free
+// Write, Edit and Run your Dart code using Dart Online Compiler
+
+void main(List<String> arguments) {
+    var name = "Juan Reina";
+    var age = "22";
+    var example = "15.5";
+    
+  print(name);
+  print(age);
+  print(example);
+}
