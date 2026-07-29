@@ -1,0 +1,59 @@
+//importamos libreria para poder tener entrada por teclado
+import 'dart:io';
+
+void main() {
+    
+//se pide el total de la cuenta    
+  print("Ingrese el total de la cuenta a pagar: ");
+  
+//el total de la cuenta se convierte a double debido a que puede ser un valor decimal  
+  String cuenta = stdin.readLineSync()!;
+  double cuentaIni = double.parse(cuenta);
+//se pide el porcentaje a calcular  
+  print("Cuanto porcentaje desea agregar de propina: ");
+  
+//se convierte a double por el valor de la cuenta en decimal  
+  String porcentaje = stdin.readLineSync()!;
+  double porcentajeIni = double.parse(porcentaje);
+//Se realiza el calculo del porcentaje y total  
+  double totalPropina = cuentaIni * porcentajeIni / 100;
+  double totalCuenta = cuentaIni + totalPropina;
+ //se muestra el total de propina y cuenta 
+  print("El valor de la propina es de: ${totalPropina.toStringAsFixed(3)} para un Total de cuenta: ${totalCuenta.toStringAsFixed(3)}");
+ //se pide el numero de las personas 
+  print("Entre cuantas personas desea dividir la cuenta ");
+  String personas = stdin.readLineSync()!;
+  int personasIni = int.parse(personas);
+  //se calculo el valor por persona
+  double totalPersonas = totalCuenta / personasIni;
+  // se imprime el valor por persona 
+  print("El valor a pagar por persona es de:  ${totalPersonas.toStringAsFixed(3)} Gracias por visitarnos");
+}
+
+
+///////////////////////////////////////////////////
+
+
+
+
+//importamos libreria para poder tener entrada por teclado
+import 'dart:io';
+
+void main() {
+  print("digita un numero entre el 1 al 12");
+  //ejercicio del docente quedo mal explicado falta importar la libreria
+  String dato = stdin.readLineSync()!; 
+  //se convierte el dato de string a int "por alguna razon no dejo con el int"
+ int datoInt = int.parse(dato);
+ 
+ //se crea una lista string con los meses teniendo en cuenta que el mes de enero equivale a 0
+ List<String> mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto","Septiembre","Octubre", "Noviembre","Diciembre"];
+ 
+ //creamos una condicion donde si es menor a 1 o mayor a 12 no estaria dentro del rango de mes por lo tanto daria error, generando un bucle hasta que el usuario ingrese el dato correcto
+ if (datoInt < 1 || datoInt > 12){
+      print("Error dato incorrecto, lea bien");
+      main();
+ }
+ // en caso de elegir la opcion correcta nos muesta el mes con la posicion de la lista restando el 1 para poder posicionar bien la lista
+ else print("El mes correspondiente es: ${mes[datoInt - 1]}");
+}
